@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    android:background="#FF7FD4">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_32dp"
+        android:layout_weight="3"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/colorWhite"
+        android:paddingRight="@dimen/dimen_32dp"
+        android:textSize="@dimen/dimen_32dp"
+        android:text="@string/register_screen_text"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:src="@drawable/ic_slide_registration"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="@dimen/dimen_64dp"
+        android:paddingRight="@dimen/dimen_64dp"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="bold"
+        android:onClick="getStarted"
+        android:text="@string/register_data_text"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_64dp" />
+
+</LinearLayout>

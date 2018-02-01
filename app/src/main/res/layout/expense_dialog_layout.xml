@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Update Your Expense \n Detail Here"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_sub_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Select Expense Source"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerUpadateExpenseSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView_sub_heading"
+        android:entries="@array/ExpenseSource"
+        android:theme="@style/AppThemeSpinner">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/editTextUpdateExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="Expense"
+        android:layout_below="@+id/spinnerUpadateExpenseSource"/>
+
+    <Button
+        android:id="@+id/buttonUpdateExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="UPDATE Expense"
+        android:layout_below="@+id/editTextUpdateExpense"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</RelativeLayout>

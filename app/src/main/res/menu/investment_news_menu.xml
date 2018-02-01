@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_call_adviser"
+        android:title="@string/call_adviser_text"/>
+
+    <item
+        android:id="@+id/action_send_message"
+        android:title="@string/send_message_text"/>
+    <item
+        android:id="@+id/menuNetwork"
+        android:icon="@drawable/ic_network_status"
+        android:title="Network status"
+        app:showAsAction="always"/>
+</menu>

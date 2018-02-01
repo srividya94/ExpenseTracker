@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Open Camera"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/ic_mic_image"
+            android:title="Audio Recoder" />
+        <item
+            android:id="@+id/Scan_Qrcode"
+            android:icon="@drawable/ic_qr_code_scanner_image"
+            android:title="Scan QR Code"
+            />
+    </group>
+
+
+    <group>
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_LogOut"
+                android:icon="@drawable/ic_logout"
+                android:title="LogOut" />
+
+
+    </group>
+
+</menu>

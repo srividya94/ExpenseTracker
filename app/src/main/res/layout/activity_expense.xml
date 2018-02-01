@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.squareandcube.expensetracker.ExpenseActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/dimen_15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:gravity="center"
+                android:text="ADD YOUR EXPENSE  \n HERE"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimens_30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimens_36dp"
+                android:text="Select Expense Source"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimens_20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerExpenseSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSubHeading"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="#FFFFFF"
+                android:entries="@array/ExpenseSource"
+                android:padding="@dimen/dimen_10"
+                android:theme="@style/AppThemeSpinner"
+                >
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/spinnerExpenseSource"
+                android:layout_below="@+id/spinnerExpenseSource"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="#FFFFFF"
+                android:hint="Expense"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_10"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_alignLeft="@+id/spinnerExpenseSource" />
+
+            <Button
+                android:id="@+id/buttonAddExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextExpense"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="#FFFFFF"
+                android:padding="@dimen/dimen_10"
+                android:text="Add Expense"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/buttonViewAllExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAddExpense"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="#FFFFFF"
+                android:padding="@dimen/dimen_10"
+                android:text="View all Expenses"
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
